@@ -1,0 +1,45 @@
+
+ type student
+ {
+   studentID:Int
+   name:String
+   age:Int
+   phone:String
+   marks:[studentMarks]
+  
+ }
+ type students
+ {
+   studentID:Int
+   name:String
+   age:Int
+   phone:String
+  
+ }
+ type studentMarks
+ {
+   studentID:Int
+   maths:Int
+   science:Int
+ }
+ 
+ 
+
+
+type Query {
+    marks:[studentMarks]
+    getStudent(studentID:Int):student
+    getmark:[studentMarks]
+    getStudents:[students]
+
+  }
+  input studentInput
+   {
+     studentID:Int
+     name:String
+     age:Int
+     phone:String
+   }
+  type Mutation {
+  createStudent(input1:studentInput): student
+}

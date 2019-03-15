@@ -1,0 +1,22 @@
+{
+  "name": "graphqlsample2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --ignore data/ server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.4.8",
+    "express": "^4.16.4",
+    "graphql": "^14.1.1",
+    "graphql-import": "^0.7.1",
+    "merge-graphql-schemas": "^1.5.8",
+    "mssql": "^4.3.2",
+    "underscore": "^1.9.1"
+  }
+}
